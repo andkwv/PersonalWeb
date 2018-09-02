@@ -27,3 +27,4 @@ The navigation bar that is available on the top of the web page are all made usi
 
 Inside the HTML file, various parts are divided using the <div> tags. Also classes and ids are made use as well.
 
+Finally an image was also used as a profile picture in the About page.
