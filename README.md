@@ -13,7 +13,8 @@ The Requirements that are specified for the webpage are as below:
 6. Your stylesheets must use at least one SCSS variable, at least one example of SCSS nesting, and at least one use of SCSS inheritance.
 7. In README.md, include a short writeup describing your project, what’s contained in each file, and (optionally) any other additional information the staff should know about your project.
 
-/****************************************************************************************************************************************/
+
+Asterisks
 
 First, a quick overview of the strcutre of the webpage.
 In this project, there are 4 html files that are made. Which are the **home** page, **About** page, **Blog** page, and finally the **Contact** page. Furthermore, it has one css file that customizes the page. The css itself is result of a compiled scss. It is making use of scss properties such as variables, nesting, and inheritance. 
