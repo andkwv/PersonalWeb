@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About - Andika</title>
+	<!-- this is the bootstrap link that we need to set up bootstrap in our html -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- And this is the link that you need to link it up to the css file. We have only one css file so it is the same for all the html		 -->
+	<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+
+	<!-- First thing on the webpage is the navigation bar that will link this html to the other 3 html file. The navigation bar is the same for all the pages so the code is identical -->
+	<div class="navbar">
+		<ul class="nav-ul">
+			<!-- Each link will go to their respective html pages -->
+			<li><a href="home.html">Home</a></li>
+			<li><a class="active" href="about.html">About</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	
+	<div class="container">
+		<div class="row">
+			<!-- Same thing we make use of the grid system like the home page -->
+			<div class="col-lg-12"> 
+				<div id="img-contain">
+					<img src="facepic.jpg" class="facepic">
+					</div>
+					<p id="about">
+					Hello! I'm Andika, I'm a keen learner who is excited about a lot of different fields.<br>
+					I am currently a 3rd year Computer Science undergraduate student at Gadjah Mada University. 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

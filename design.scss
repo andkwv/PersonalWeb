@@ -1,0 +1,198 @@
+/*In this example we are using a single css file for 4 html pages. 
+the reason being: 
+1. Allow browser to cache the css file, hence faster loading
+2. Ease maintenance proces as you need only to open 1 file*/
+
+
+/*********************FOR ALL***************************/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+$col: #E8E7E7;      /***********The variable implementation for SASS*****************/
+
+.navbar {
+	background-color: black;
+	overflow: hidden;
+  
+  a {                             /**********The Nested implementation for SASS**************/
+	float: left;
+	color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+}
+
+.nav-ul {                         /**********The Nested implementation for SASS**************/
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  li {
+      display: inline;
+  }
+
+  li a:hover {
+      background-color: lightslategray;
+  }
+
+  li .active {
+    background-color: cadetblue;
+  }
+}
+
+html {
+	height: 100%;
+}
+
+
+body {
+	background: url(https://hdqwalls.com/download/starry-sky-u0-1920x1080.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+	/*text-align: center;
+	vertical-align: middle;
+	line-height: 200px;*/
+
+
+
+/*********************************************************/
+
+/*********************FOR HOME***************************/
+
+#content{
+	text-align: center;      /*to put the main text in the center*/
+	padding-top: 25%
+}
+
+#line {
+	border-color: white;     /*We adjust the line to be white and have the width that fits the text above it*/
+	width: 400px;
+}
+
+#hello {
+	font-weight: 700;        /*we adjust the size of the Hello font so that it is better to see*/
+	font-size: 5em;
+}
+
+
+
+
+/*********************************************************/
+
+/*********************FOR ABOUT***************************/
+#img-contain {
+	padding-top: 15%;
+}
+
+
+img.facepic {
+  margin-left: auto;    
+  margin-right: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+
+}
+
+#about {
+	padding-top: 3%;
+	text-align: center;
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+/*********************************************************/
+
+/*********************FOR BLOG***************************/
+
+.blogcontent {
+  width: 80%;
+  border: 20px solid #bdc3c7;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.date {
+  color: #3498db;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.quote{
+  border-left: 5px solid #bdc3c7;
+  padding-left: 5px;
+}
+
+.blogtitle {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: $col; /***********The variable implementation for SASS*****************/
+}
+
+#line-separator {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+
+
+/*********************************************************/
+
+/*********************FOR CONTACT***************************/
+
+table {
+  border-color: $col; /***********The variable implementation for SASS*****************/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contactbox {
+  @extend .blogtitle;   /********************** The Inheritance implementation for SASS ***********************/
+  padding-top: 25%;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+}
+
+
+ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+/*********************************************************/

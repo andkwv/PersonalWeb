@@ -1,0 +1,159 @@
+/*In this example we are using a single css file for 4 html pages. 
+the reason being: 
+1. Allow browser to cache the css file, hence faster loading
+2. Ease maintenance proces as you need only to open 1 file*/
+/*********************FOR ALL***************************/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+/***********The variable implementation for SASS*****************/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000312}}
+.navbar {
+  background-color: black;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000316}}
+  .navbar a {
+    /**********The Nested implementation for SASS**************/
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000325}}
+.nav-ul {
+  /**********The Nested implementation for SASS**************/
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000330}}
+  .nav-ul li {
+    display: inline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000334}}
+  .nav-ul li a:hover {
+    background-color: lightslategray; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000338}}
+  .nav-ul li .active {
+    background-color: cadetblue; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000343}}
+html {
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000348}}
+body {
+  background: url(https://hdqwalls.com/download/starry-sky-u0-1920x1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+/*text-align: center;
+vertical-align: middle;
+line-height: 200px;*/
+/*********************************************************/
+/*********************FOR HOME***************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000367}}
+#content {
+  text-align: center;
+  padding-top: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000372}}
+#line {
+  border-color: white;
+  width: 400px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000377}}
+#hello {
+  font-weight: 700;
+  font-size: 5em; }
+
+/*********************************************************/
+/*********************FOR ABOUT***************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000388}}
+#img-contain {
+  padding-top: 15%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\0000393}}
+img.facepic {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003104}}
+#about {
+  padding-top: 3%;
+  text-align: center;
+  font-size: 1.5em; }
+
+/*********************************************************/
+/*********************FOR BLOG***************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003121}}
+.blogcontent {
+  width: 80%;
+  border: 20px solid #bdc3c7;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003130}}
+.post {
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003134}}
+.date {
+  color: #3498db;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003140}}
+.quote {
+  border-left: 5px solid #bdc3c7;
+  padding-left: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003145}}
+.blogtitle, #contactbox {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #E8E7E7;
+  /***********The variable implementation for SASS*****************/ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003151}}
+#line-separator {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+/*********************************************************/
+/*********************FOR CONTACT***************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003169}}
+table {
+  border-color: #E8E7E7;
+  /***********The variable implementation for SASS*****************/
+  margin-left: auto;
+  margin-right: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003175}}
+#contactbox {
+  /********************** The Inheritance implementation for SASS ***********************/
+  padding-top: 25%;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003181}}
+td {
+  padding: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/PELAJARAN_SEMESTER_5\/PEMROGRAMAN\%20WEB\/First\%20Task\/design\.scss}line{font-family:\00003186}}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/*********************************************************/
+
+/*# sourceMappingURL=design.css.map */

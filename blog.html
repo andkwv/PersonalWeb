@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<!-- this is the bootstrap link that we need to set up bootstrap in our html -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- And this is the link that you need to link it up to the css file. We have only one css file so it is the same for all the html		 -->
+	<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+
+	<!-- First thing on the webpage is the navigation bar that will link this html to the other 3 html file. The navigation bar is the same for all the pages so the code is identical -->
+	<div class="navbar">
+		<ul class="nav-ul">
+			<!-- Each link will go to their respective html pages -->
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a class="active" href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<!-- As usual we make use of the div components to better organize our html in a way they are supposed to. -->
+	<div class="blogcontent">
+		<div class="post">
+			 
+			<div class="date">July 21 2018</div>
+			<h2 class="blogtitle">Crepe Cafes</h2>
+
+			<p class="quote">
+			There is a particular street in Paris that is filled with crepe cafes, one of which was the Les Deux Magots, known for its iconic clientele of the past (Picasso, Hemingway and James Joyce to name just a few). One afternoon I decided I had enough walking, grabbed a table out front, ordered a bottle of wine and just sat and watched the world go by. When the French talk about the joie de vivre, I’m pretty sure this is what they’re referring to.
+			</p>
+
+			<p>There were many more favourite moments I had during the trip, including visiting the centre pompidou museum, going up the Arc du Triomphe (which I will talk about later), walking through the public gardens and shopping at the Galleries Lafayette.</p>
+			<hr id="line-separator">
+		</div>
+
+		<!-- <hr> -->
+
+		<div class="post">
+			<div class="date">July 24 2018</div>
+			<h2 class="blogtitle">Arc du Triomphe</h2>
+
+			<p class="quote">
+			One of the most famous monuments in Paris, the Arc de Triomphe, is not just historical and pretty to look at from the Champs Elysees, but worth the effort to climb 284 steps to reach the observation deck for serious photo ops. Some of my favourite photos are from here and is a wonderful vantage point of the Eiffel Tower. 
+			</p>
+
+
+			<p>I paid for a 4-day Museum Pass, clustering my museum visits during this time to get our money’s worth, but found that even though it might have cost us a bit more than paying for each separately, skipping the line made it worthwhile (we skipped the line here, saving ourselves at least 30 minutes). The climb is a bit challenging, we passed many people along the way who needed to catch their breath, but if you’re in good health, don’t hesitate to make your way to the top.</p>
+		</div>
+	</div>
+
+</body>
+</html>

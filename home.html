@@ -1,0 +1,47 @@
+<!DOCTYPE html>		<!-- specifies that this is html5 -->
+<html>
+<head>
+	<title>Andika William</title>
+
+	<!-- this is the bootstrap link that we need to set up bootstrap in our html -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- And this is the link that you need to link it up to the css file. We have only one css file so it is the same for all the html		 -->
+	<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+
+	<!-- First thing on the webpage is the navigation bar that will link this html to the other 3 html file. The navigation bar is the same for all the pages so the code is identical -->
+	<div class="navbar">
+		<ul class="nav-ul">
+			<!-- Each link will go to their respective html pages -->
+			<!-- One small thing, here the link has an active class, this is a way to color the current html page tthat we are on -->
+			<!-- Hence, the class will be in a different place depending on the location -->
+			<li><a class="active" href="home.html">Home</a></li>			
+			<li><a href="about.html">About</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+
+<!-- 			Here we make use of the GRID SYSTEM that bootstrap has to offer
+			In bootstrap an html page is divided into 12 equal columns. Our goal here is to just put our text right in the middle of the screen
+			So we make use of col-lg-12 which stands for column large 12 columns. lg is meant for large screens -->
+			<div class="col-lg-12"> <!-- we want to use the whole grid (12 columns) and then put it in the center -->
+				<div id="content">
+					<h1 id="hello">HELLO, I'M ANDIKA</h1>
+					<h3>Welcome to my personal page</h3>
+					<hr id="line">
+
+					<!-- AS we can see here we have made used of a bootstrap type of button by using btn btn-info type -->
+					<a href="about.html" class="btn btn-info" role="button">About Me</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
